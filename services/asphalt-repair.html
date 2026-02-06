@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional asphalt repair and pothole patching in Kansas City. Expert parking lot repair services for commercial properties throughout the KC metro area.">
     <meta name="keywords" content="asphalt repair Kansas City, pothole repair KC, parking lot patching, commercial asphalt repair Missouri, Kansas City parking lot repair, pothole patching service">
-    <title>Asphalt Repair Kansas City | Pothole Patching KC | Precision Care</title>
+    <meta name="geo.region" content="US-MO">
+    <meta name="geo.placename" content="Kansas City">
+    <title>Asphalt Repair Kansas City | Pothole Patching KC</title>
     <link rel="icon" type="image/png" href="../images/icon-circle.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo-full.png" alt="Precision Care Logo">
-            </a>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo-full.png" alt="Precision Care Logo">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
                 <li class="dropdown">
-                    <a href="../index.html#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="../index.html#services" class="nav-link dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="striping.html">Parking Lot Striping</a></li>
                         <li><a href="sweeping.html">Contract Sweeping</a></li>
@@ -34,137 +43,142 @@
                         <li><a href="seal-coating.html">Seal Coating</a></li>
                     </ul>
                 </li>
-                <li><a href="../index.html#gallery">Gallery</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:8162527989" class="nav-link cta-btn">Call Now</a></li>
             </ul>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="service-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/parking-lot-1.jpg') center/cover no-repeat;">
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="service-hero-overlay"></div>
         <div class="container">
-            <h1>Asphalt Repair Kansas City</h1>
-            <p>Professional Pothole Patching & Parking Lot Repair Services</p>
-            <div class="hero-cta">
-                <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-                <a href="mailto:Precisioncare9716@sbcglobal.net" class="cta-button-secondary">Get A Quote</a>
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>Asphalt Repair</span>
+                </div>
+                <h1>Asphalt Repair in Kansas City</h1>
+                <p class="service-hero-subtitle">Professional Pothole Patching & Parking Lot Repair Services</p>
+                <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> (816) 252-7989</a>
             </div>
         </div>
     </section>
 
-    <!-- Service Details -->
-    <section class="service-details">
+    <!-- Service Content -->
+    <section class="service-content">
         <div class="container">
-            <div class="service-content">
-                <h2>Expert Asphalt Repair Services in Kansas City Metro</h2>
-                <p>Potholes and damaged asphalt create safety hazards and project a poor image to customers. Precision Care provides fast, professional asphalt repair services throughout Kansas City to restore your parking lot's safety and appearance.</p>
-                
-                <h3>Our Asphalt Repair Services</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-check-circle"></i> Emergency pothole patching</li>
-                    <li><i class="fas fa-check-circle"></i> Asphalt overlay and resurfacing</li>
-                    <li><i class="fas fa-check-circle"></i> Full-depth repairs for severe damage</li>
-                    <li><i class="fas fa-check-circle"></i> Edge and curb repairs</li>
-                    <li><i class="fas fa-check-circle"></i> Base repair and stabilization</li>
-                    <li><i class="fas fa-check-circle"></i> Infrared asphalt repair</li>
-                    <li><i class="fas fa-check-circle"></i> ADA-compliant ramp repairs</li>
-                </ul>
+            <div class="service-layout">
+                <div class="service-main">
+                    <img src="../images/parking-lot-1.jpg" alt="Professional asphalt repair in Kansas City" class="service-featured-image">
+                    
+                    <h2>Expert Asphalt Repair Services</h2>
+                    <p class="lead">Potholes and damaged asphalt create safety hazards and project a poor image to customers. Precision Care provides fast, professional asphalt repair services throughout Kansas City to restore your parking lot's safety and appearance.</p>
+                    
+                    <p>Don't let parking lot damage drive customers away or expose you to liability. Our experienced crew uses high-quality hot mix asphalt and professional techniques to deliver repairs that last, restoring both safety and curb appeal to your commercial property.</p>
 
-                <h3>Common Asphalt Problems We Fix</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-wrench"></i> <strong>Potholes:</strong> Dangerous depressions that damage vehicles</li>
-                    <li><i class="fas fa-wrench"></i> <strong>Alligator Cracking:</strong> Network of cracks indicating base failure</li>
-                    <li><i class="fas fa-wrench"></i> <strong>Rutting:</strong> Depressions in wheel paths from heavy traffic</li>
-                    <li><i class="fas fa-wrench"></i> <strong>Raveling:</strong> Surface disintegration and aggregate loss</li>
-                    <li><i class="fas fa-wrench"></i> <strong>Edge Deterioration:</strong> Crumbling edges and perimeter damage</li>
-                    <li><i class="fas fa-wrench"></i> <strong>Settlements:</strong> Sinking areas from poor base support</li>
-                </ul>
+                    <h3>Our Asphalt Repair Services:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Emergency Pothole Patching:</strong> 24/7 urgent repair service</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Asphalt Overlay:</strong> Complete surface resurfacing</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Full-Depth Repairs:</strong> Base repair for severe damage</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Edge & Curb Repairs:</strong> Perimeter damage restoration</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Base Stabilization:</strong> Sub-base repair and compaction</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Infrared Repair:</strong> Seamless patching technology</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>ADA Ramp Repairs:</strong> Compliant accessibility repairs</li>
+                    </ul>
 
-                <h3>Our Repair Process</h3>
-                <ol class="service-list">
-                    <li><strong>Assessment:</strong> Thorough inspection of damage and underlying causes</li>
-                    <li><strong>Preparation:</strong> Removal of damaged asphalt and base preparation</li>
-                    <li><strong>Base Repair:</strong> Stabilization and compaction of sub-base if needed</li>
-                    <li><strong>Hot Asphalt Application:</strong> Installation of high-quality hot mix asphalt</li>
-                    <li><strong>Compaction:</strong> Professional rolling and compaction for durability</li>
-                    <li><strong>Finishing:</strong> Edge blending and surface finishing</li>
-                    <li><strong>Striping:</strong> Line repainting if needed</li>
-                </ol>
+                    <h3>Common Problems We Fix</h3>
+                    <ul>
+                        <li><i class="fas fa-wrench"></i> <strong>Potholes:</strong> Dangerous depressions that damage vehicles</li>
+                        <li><i class="fas fa-wrench"></i> <strong>Alligator Cracking:</strong> Networks of cracks indicating base failure</li>
+                        <li><i class="fas fa-wrench"></i> <strong>Rutting:</strong> Deep depressions in wheel paths from heavy traffic</li>
+                        <li><i class="fas fa-wrench"></i> <strong>Raveling:</strong> Surface disintegration and aggregate loss</li>
+                        <li><i class="fas fa-wrench"></i> <strong>Edge Deterioration:</strong> Crumbling edges and perimeter damage</li>
+                        <li><i class="fas fa-wrench"></i> <strong>Settlements:</strong> Sinking areas from poor base support</li>
+                    </ul>
 
-                <h3>Why Immediate Repair is Important</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-exclamation-triangle"></i> Prevents further damage and costly repairs</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Reduces liability from trip and fall accidents</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Protects vehicles from damage</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Maintains professional property appearance</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Extends overall pavement life</li>
-                </ul>
+                    <h3>Our Repair Process</h3>
+                    <ol>
+                        <li><strong>Assessment:</strong> Thorough inspection of damage and underlying causes</li>
+                        <li><strong>Preparation:</strong> Removal of damaged asphalt and base preparation</li>
+                        <li><strong>Base Repair:</strong> Stabilization and compaction of sub-base if needed</li>
+                        <li><strong>Hot Asphalt Application:</strong> Installation of high-quality hot mix asphalt</li>
+                        <li><strong>Compaction:</strong> Professional rolling and compaction for durability</li>
+                        <li><strong>Finishing:</strong> Edge blending and surface finishing</li>
+                        <li><strong>Striping:</strong> Line repainting if needed</li>
+                    </ol>
 
-                <h3>Service Areas in Kansas City Metro</h3>
-                <p>We provide asphalt repair services throughout the greater Kansas City area including:</p>
-                <ul class="service-list">
-                    <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Independence</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
-                    <li><i class="fas fa-map-marker-alt"></i> All KC Metro Communities</li>
-                </ul>
-            </div>
+                    <h3>Why Immediate Repair Matters</h3>
+                    <ul>
+                        <li><i class="fas fa-exclamation-triangle"></i> Prevents further damage and costly replacements</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Reduces liability from trip and fall accidents</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Protects vehicles from damage claims</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Maintains professional property appearance</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Extends overall pavement life significantly</li>
+                    </ul>
 
-            <div class="service-sidebar">
-                <div class="service-card">
-                    <h3>Quick Contact</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Email Us</a></p>
-                        <p><i class="fas fa-clock"></i> Open 24/7</p>
+                    <h3>Service Areas</h3>
+                    <p>We provide asphalt repair services throughout the greater Kansas City area including:</p>
+                    <div class="service-areas">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Independence</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lenexa</li>
+                            <li><i class="fas fa-map-marker-alt"></i> All KC Metro</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Need Emergency Asphalt Repair?</h3>
+                        <p>Get fast, professional repairs from Kansas City's most trusted maintenance company</p>
+                        <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> Call (816) 252-7989</a>
                     </div>
                 </div>
 
-                <div class="service-card">
-                    <h3>Other Services</h3>
-                    <ul class="service-menu">
-                        <li><a href="striping.html">Parking Lot Striping</a></li>
-                        <li><a href="sweeping.html">Contract Sweeping</a></li>
-                        <li><a href="sand-removal.html">Sand Removal</a></li>
-                        <li><a href="crack-filling.html">Crack Filling</a></li>
-                        <li><a href="seal-coating.html">Seal Coating</a></li>
-                    </ul>
-                </div>
+                <aside class="service-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Request A Quote</h3>
+                        <p>Get a free estimate for your asphalt repair project</p>
+                        <a href="tel:8162527989" class="btn btn-secondary"><i class="fas fa-phone"></i> (816) 252-7989</a>
+                        <a href="mailto:Precisioncare9716@sbcglobal.net" class="btn btn-outline"><i class="fas fa-envelope"></i> Email Us</a>
+                    </div>
 
-                <div class="service-card">
-                    <h3>Why Choose Us</h3>
-                    <ul class="why-list">
-                        <li><i class="fas fa-star"></i> 30+ Years Experience</li>
-                        <li><i class="fas fa-star"></i> Licensed & Insured</li>
-                        <li><i class="fas fa-star"></i> 5-Star Google Rating</li>
-                        <li><i class="fas fa-star"></i> Family Owned</li>
-                    </ul>
-                </div>
+                    <div class="sidebar-card emergency">
+                        <h3><i class="fas fa-exclamation-circle"></i> 24/7 Emergency Service</h3>
+                        <p>We understand parking lot damage can happen anytime. Call us for urgent repairs!</p>
+                        <a href="tel:8162527989" class="btn btn-secondary">Call Now</a>
+                    </div>
 
-                <div class="service-card highlight">
-                    <h3>24/7 Emergency Service</h3>
-                    <p>We understand that parking lot damage can happen anytime. That's why we offer 24/7 emergency asphalt repair services for urgent situations.</p>
-                    <a href="tel:8162527989" class="cta-button">Call Now</a>
-                </div>
+                    <div class="sidebar-card">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fas fa-check"></i> 30+ Years Experience</li>
+                            <li><i class="fas fa-check"></i> Licensed & Insured</li>
+                            <li><i class="fas fa-check"></i> 24/7 Emergency Service</li>
+                            <li><i class="fas fa-check"></i> Hot Mix Asphalt</li>
+                            <li><i class="fas fa-check"></i> 5-Star Rated</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h3>Other Services</h3>
+                        <ul class="services-list">
+                            <li><a href="striping.html"><i class="fas fa-arrow-right"></i> Parking Lot Striping</a></li>
+                            <li><a href="sweeping.html"><i class="fas fa-arrow-right"></i> Contract Sweeping</a></li>
+                            <li><a href="sand-removal.html"><i class="fas fa-arrow-right"></i> Sand Removal</a></li>
+                            <li><a href="crack-filling.html"><i class="fas fa-arrow-right"></i> Crack Filling</a></li>
+                            <li><a href="seal-coating.html"><i class="fas fa-arrow-right"></i> Seal Coating</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="service-cta">
-        <div class="container">
-            <h2>Need Emergency Asphalt Repair?</h2>
-            <p>Get fast, professional parking lot repairs from Kansas City's most trusted maintenance company</p>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989 Now</a>
         </div>
     </section>
 
@@ -202,6 +216,7 @@
                     <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Precisioncare9716@sbcglobal.net</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> 8894 S Buckner Tarsney Rd<br>Oak Grove, MO 64075</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7</p>
                 </div>
             </div>
             <div class="footer-bottom">

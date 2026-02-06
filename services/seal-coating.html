@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional seal coating services in Kansas City. Protect and beautify your parking lot with expert asphalt sealing throughout the KC metro area.">
     <meta name="keywords" content="seal coating Kansas City, asphalt sealing KC, parking lot seal coating, sealcoating Missouri, Kansas City parking lot sealing, commercial seal coating">
-    <title>Seal Coating Kansas City | Asphalt Sealing KC | Precision Care</title>
+    <meta name="geo.region" content="US-MO">
+    <meta name="geo.placename" content="Kansas City">
+    <title>Seal Coating Kansas City | Asphalt Sealing KC</title>
     <link rel="icon" type="image/png" href="../images/icon-circle.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo-full.png" alt="Precision Care Logo">
-            </a>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo-full.png" alt="Precision Care Logo">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
                 <li class="dropdown">
-                    <a href="../index.html#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="../index.html#services" class="nav-link dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="striping.html">Parking Lot Striping</a></li>
                         <li><a href="sweeping.html">Contract Sweeping</a></li>
@@ -34,142 +43,148 @@
                         <li><a href="seal-coating.html">Seal Coating</a></li>
                     </ul>
                 </li>
-                <li><a href="../index.html#gallery">Gallery</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:8162527989" class="nav-link cta-btn">Call Now</a></li>
             </ul>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="service-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/parking-lot-aerial.jpg') center/cover no-repeat;">
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="service-hero-overlay"></div>
         <div class="container">
-            <h1>Seal Coating Kansas City</h1>
-            <p>Professional Asphalt Sealing & Protection Services</p>
-            <div class="hero-cta">
-                <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-                <a href="mailto:Precisioncare9716@sbcglobal.net" class="cta-button-secondary">Get A Quote</a>
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>Seal Coating</span>
+                </div>
+                <h1>Seal Coating in Kansas City</h1>
+                <p class="service-hero-subtitle">Professional Asphalt Sealing & Protection Services</p>
+                <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> (816) 252-7989</a>
             </div>
         </div>
     </section>
 
-    <!-- Service Details -->
-    <section class="service-details">
+    <!-- Service Content -->
+    <section class="service-content">
         <div class="container">
-            <div class="service-content">
-                <h2>Expert Seal Coating Services in Kansas City Metro</h2>
-                <p>Seal coating is the most cost-effective way to protect and extend the life of your asphalt parking lot. Precision Care provides professional seal coating services throughout Kansas City to keep your pavement looking great and lasting longer.</p>
-                
-                <h3>Our Seal Coating Process</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-check-circle"></i> Complete surface cleaning and preparation</li>
-                    <li><i class="fas fa-check-circle"></i> Crack filling and repair (if needed)</li>
-                    <li><i class="fas fa-check-circle"></i> Edge trimming and grass removal</li>
-                    <li><i class="fas fa-check-circle"></i> Application of premium coal tar or asphalt emulsion sealer</li>
-                    <li><i class="fas fa-check-circle"></i> Two-coat application for maximum protection</li>
-                    <li><i class="fas fa-check-circle"></i> Professional edging and finishing</li>
-                    <li><i class="fas fa-check-circle"></i> Traffic control and area protection</li>
-                    <li><i class="fas fa-check-circle"></i> Fresh striping after curing</li>
-                </ul>
+            <div class="service-layout">
+                <div class="service-main">
+                    <img src="../images/parking-lot-aerial.jpg" alt="Professional seal coating services in Kansas City" class="service-featured-image">
+                    
+                    <h2>Expert Seal Coating Services</h2>
+                    <p class="lead">Seal coating is the most cost-effective way to protect and extend the life of your asphalt parking lot. Precision Care provides professional seal coating services throughout Kansas City to keep your pavement looking great and lasting longer.</p>
+                    
+                    <p>Like sunscreen protects your skin, seal coating protects your asphalt from UV rays, water damage, and chemicals. Our two-coat application process using premium sealers restores the rich black color while doubling your pavement's lifespan—the smartest investment you can make in your parking lot.</p>
 
-                <h3>Benefits of Seal Coating</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-shield-alt"></i> <strong>UV Protection:</strong> Blocks harmful sun rays that oxidize asphalt</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Water Resistance:</strong> Prevents water penetration and base damage</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Chemical Resistance:</strong> Protects against oil, gas, and salt damage</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Extended Life:</strong> Doubles the life of your parking lot</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Appearance:</strong> Restores rich, black color for curb appeal</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Flexibility:</strong> Reduces cracking from temperature changes</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Easy Maintenance:</strong> Makes snow removal and cleaning easier</li>
-                    <li><i class="fas fa-shield-alt"></i> <strong>Cost Savings:</strong> Prevents expensive repairs and replacement</li>
-                </ul>
+                    <h3>Our Seal Coating Process:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Complete Surface Cleaning:</strong> Thorough preparation and cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Crack Filling:</strong> Repair all cracks before sealing</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Edge Trimming:</strong> Remove grass and debris from edges</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Premium Sealer Application:</strong> Coal tar or asphalt emulsion</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Two-Coat Application:</strong> Maximum protection and longevity</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Professional Edging:</strong> Clean lines and finishing</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Traffic Control:</strong> Safe work zones and area protection</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Fresh Striping:</strong> New lines after curing</li>
+                    </ul>
 
-                <h3>When Should You Seal Coat?</h3>
-                <p><strong>New Asphalt:</strong> Wait 6-12 months for proper curing before first seal coat</p>
-                <p><strong>Existing Asphalt:</strong> Every 2-3 years for optimal protection</p>
-                <p><strong>Best Season:</strong> Late spring through early fall when temperatures are above 50°F</p>
-                <p><strong>Signs You Need Seal Coating:</strong></p>
-                <ul class="service-list">
-                    <li><i class="fas fa-exclamation-circle"></i> Faded, gray appearance</li>
-                    <li><i class="fas fa-exclamation-circle"></i> Small surface cracks appearing</li>
-                    <li><i class="fas fa-exclamation-circle"></i> Visible aggregate (rocks) showing through</li>
-                    <li><i class="fas fa-exclamation-circle"></i> Oil spots and stains</li>
-                    <li><i class="fas fa-exclamation-circle"></i> Rough, dry surface texture</li>
-                </ul>
+                    <h3>Benefits of Seal Coating</h3>
+                    <ul>
+                        <li><i class="fas fa-shield-alt"></i> <strong>UV Protection:</strong> Blocks harmful sun rays that oxidize asphalt</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Water Resistance:</strong> Prevents water penetration and base damage</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Chemical Resistance:</strong> Protects against oil, gas, and salt damage</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Extended Life:</strong> Doubles the life of your parking lot</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Improved Appearance:</strong> Restores rich, black color for curb appeal</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Increased Flexibility:</strong> Reduces cracking from temperature changes</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Easier Maintenance:</strong> Simplifies snow removal and cleaning</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Cost Savings:</strong> Prevents expensive repairs and replacement</li>
+                    </ul>
 
-                <h3>Premium Seal Coating Materials</h3>
-                <p>We use only the highest quality seal coating products designed for commercial applications and Kansas City weather conditions. Our sealers include:</p>
-                <ul class="service-list">
-                    <li><i class="fas fa-check"></i> Sand additives for improved traction</li>
-                    <li><i class="fas fa-check"></i> Flexible additives for crack resistance</li>
-                    <li><i class="fas fa-check"></i> UV inhibitors for long-lasting color</li>
-                    <li><i class="fas fa-check"></i> Fast-drying formulas to minimize downtime</li>
-                </ul>
+                    <h3>When Should You Seal Coat?</h3>
+                    <p><strong>New Asphalt:</strong> Wait 6-12 months for proper curing before first seal coat</p>
+                    <p><strong>Existing Asphalt:</strong> Every 2-3 years for optimal protection</p>
+                    <p><strong>Best Season:</strong> Late spring through early fall when temperatures are above 50°F</p>
+                    
+                    <p><strong>Signs You Need Seal Coating:</strong></p>
+                    <ul>
+                        <li><i class="fas fa-exclamation-circle"></i> Faded, gray appearance instead of rich black</li>
+                        <li><i class="fas fa-exclamation-circle"></i> Small surface cracks beginning to appear</li>
+                        <li><i class="fas fa-exclamation-circle"></i> Visible aggregate (rocks) showing through surface</li>
+                        <li><i class="fas fa-exclamation-circle"></i> Oil spots and chemical stains present</li>
+                        <li><i class="fas fa-exclamation-circle"></i> Rough, dry surface texture developing</li>
+                    </ul>
 
-                <h3>Service Areas in Kansas City Metro</h3>
-                <p>We provide seal coating services throughout the greater Kansas City area including:</p>
-                <ul class="service-list">
-                    <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Independence</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
-                    <li><i class="fas fa-map-marker-alt"></i> All KC Metro Communities</li>
-                </ul>
-            </div>
+                    <h3>Premium Seal Coating Materials</h3>
+                    <p>We use only the highest quality seal coating products designed for commercial applications and Kansas City weather conditions. Our sealers include:</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Sand additives for improved traction and safety</li>
+                        <li><i class="fas fa-check"></i> Flexible additives for crack resistance</li>
+                        <li><i class="fas fa-check"></i> UV inhibitors for long-lasting color retention</li>
+                        <li><i class="fas fa-check"></i> Fast-drying formulas to minimize downtime</li>
+                    </ul>
 
-            <div class="service-sidebar">
-                <div class="service-card">
-                    <h3>Quick Contact</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Email Us</a></p>
-                        <p><i class="fas fa-clock"></i> Open 24/7</p>
+                    <h3>Service Areas</h3>
+                    <p>We provide seal coating services throughout the greater Kansas City area including:</p>
+                    <div class="service-areas">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Independence</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lenexa</li>
+                            <li><i class="fas fa-map-marker-alt"></i> All KC Metro</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Ready to Protect Your Parking Lot Investment?</h3>
+                        <p>Get professional seal coating services from Kansas City's most trusted experts</p>
+                        <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> Call (816) 252-7989</a>
                     </div>
                 </div>
 
-                <div class="service-card">
-                    <h3>Other Services</h3>
-                    <ul class="service-menu">
-                        <li><a href="striping.html">Parking Lot Striping</a></li>
-                        <li><a href="sweeping.html">Contract Sweeping</a></li>
-                        <li><a href="sand-removal.html">Sand Removal</a></li>
-                        <li><a href="crack-filling.html">Crack Filling</a></li>
-                        <li><a href="asphalt-repair.html">Asphalt Repair</a></li>
-                    </ul>
-                </div>
+                <aside class="service-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Request A Quote</h3>
+                        <p>Get a free estimate for your seal coating project</p>
+                        <a href="tel:8162527989" class="btn btn-secondary"><i class="fas fa-phone"></i> (816) 252-7989</a>
+                        <a href="mailto:Precisioncare9716@sbcglobal.net" class="btn btn-outline"><i class="fas fa-envelope"></i> Email Us</a>
+                    </div>
 
-                <div class="service-card">
-                    <h3>Why Choose Us</h3>
-                    <ul class="why-list">
-                        <li><i class="fas fa-star"></i> 30+ Years Experience</li>
-                        <li><i class="fas fa-star"></i> Licensed & Insured</li>
-                        <li><i class="fas fa-star"></i> 5-Star Google Rating</li>
-                        <li><i class="fas fa-star"></i> Family Owned</li>
-                    </ul>
-                </div>
+                    <div class="sidebar-card seasonal">
+                        <h3><i class="fas fa-calendar-alt"></i> Seal Coating Season</h3>
+                        <p>Plan ahead! The best time for seal coating is late spring through early fall. Contact us early to schedule during optimal weather conditions.</p>
+                        <a href="tel:8162527989" class="btn btn-secondary">Schedule Now</a>
+                    </div>
 
-                <div class="service-card highlight">
-                    <h3>Seal Coating Season</h3>
-                    <p>Plan ahead! The best time for seal coating is late spring through early fall. Contact us early to schedule your project during optimal weather conditions.</p>
-                    <a href="tel:8162527989" class="cta-button">Schedule Now</a>
-                </div>
+                    <div class="sidebar-card">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fas fa-check"></i> 30+ Years Experience</li>
+                            <li><i class="fas fa-check"></i> Licensed & Insured</li>
+                            <li><i class="fas fa-check"></i> Two-Coat Application</li>
+                            <li><i class="fas fa-check"></i> Premium Sealers</li>
+                            <li><i class="fas fa-check"></i> 5-Star Rated</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h3>Other Services</h3>
+                        <ul class="services-list">
+                            <li><a href="striping.html"><i class="fas fa-arrow-right"></i> Parking Lot Striping</a></li>
+                            <li><a href="sweeping.html"><i class="fas fa-arrow-right"></i> Contract Sweeping</a></li>
+                            <li><a href="sand-removal.html"><i class="fas fa-arrow-right"></i> Sand Removal</a></li>
+                            <li><a href="crack-filling.html"><i class="fas fa-arrow-right"></i> Crack Filling</a></li>
+                            <li><a href="asphalt-repair.html"><i class="fas fa-arrow-right"></i> Asphalt Repair</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="service-cta">
-        <div class="container">
-            <h2>Ready to Protect Your Parking Lot Investment?</h2>
-            <p>Get professional seal coating services from Kansas City's most trusted parking lot maintenance experts</p>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989 Now</a>
         </div>
     </section>
 
@@ -207,6 +222,7 @@
                     <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Precisioncare9716@sbcglobal.net</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> 8894 S Buckner Tarsney Rd<br>Oak Grove, MO 64075</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7</p>
                 </div>
             </div>
             <div class="footer-bottom">

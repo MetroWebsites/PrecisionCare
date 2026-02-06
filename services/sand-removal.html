@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional post-winter sand removal services in Kansas City. Complete parking lot cleanup and sand sweeping for commercial properties throughout KC metro area.">
     <meta name="keywords" content="sand removal Kansas City, post-winter cleanup KC, parking lot sand removal, commercial sand sweeping, Kansas City parking lot cleanup, winter sand removal Missouri">
-    <title>Sand Removal Kansas City | Post-Winter Parking Lot Cleanup | Precision Care</title>
+    <meta name="geo.region" content="US-MO">
+    <meta name="geo.placename" content="Kansas City">
+    <title>Sand Removal Kansas City | Post-Winter Parking Lot Cleanup</title>
     <link rel="icon" type="image/png" href="../images/icon-circle.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo-full.png" alt="Precision Care Logo">
-            </a>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo-full.png" alt="Precision Care Logo">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
                 <li class="dropdown">
-                    <a href="../index.html#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="../index.html#services" class="nav-link dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="striping.html">Parking Lot Striping</a></li>
                         <li><a href="sweeping.html">Contract Sweeping</a></li>
@@ -34,111 +43,117 @@
                         <li><a href="seal-coating.html">Seal Coating</a></li>
                     </ul>
                 </li>
-                <li><a href="../index.html#gallery">Gallery</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:8162527989" class="nav-link cta-btn">Call Now</a></li>
             </ul>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="service-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/parking-lot-snow.jpg') center/cover no-repeat;">
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="service-hero-overlay"></div>
         <div class="container">
-            <h1>Sand Removal Kansas City</h1>
-            <p>Professional Post-Winter Parking Lot Cleanup Services</p>
-            <div class="hero-cta">
-                <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-                <a href="mailto:Precisioncare9716@sbcglobal.net" class="cta-button-secondary">Get A Quote</a>
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>Sand Removal</span>
+                </div>
+                <h1>Sand Removal in Kansas City</h1>
+                <p class="service-hero-subtitle">Professional Post-Winter Parking Lot Cleanup Services</p>
+                <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> (816) 252-7989</a>
             </div>
         </div>
     </section>
 
-    <!-- Service Details -->
-    <section class="service-details">
+    <!-- Service Content -->
+    <section class="service-content">
         <div class="container">
-            <div class="service-content">
-                <h2>Expert Sand Removal Services in Kansas City Metro</h2>
-                <p>After harsh Kansas City winters, sand accumulation can make your parking lot look unprofessional and create safety hazards. Precision Care provides thorough post-winter sand removal and cleanup services throughout the KC metro area.</p>
-                
-                <h3>Our Sand Removal Process</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-check-circle"></i> Complete parking lot assessment and planning</li>
-                    <li><i class="fas fa-check-circle"></i> Industrial-strength sweeping equipment</li>
-                    <li><i class="fas fa-check-circle"></i> Edge and curb line cleaning</li>
-                    <li><i class="fas fa-check-circle"></i> Storm drain clearing to prevent clogs</li>
-                    <li><i class="fas fa-check-circle"></i> Multiple passes for thorough removal</li>
-                    <li><i class="fas fa-check-circle"></i> Proper disposal of collected materials</li>
-                    <li><i class="fas fa-check-circle"></i> Final inspection and touch-up</li>
-                </ul>
+            <div class="service-layout">
+                <div class="service-main">
+                    <img src="../images/parking-lot-snow.jpg" alt="Post-winter sand removal in Kansas City" class="service-featured-image">
+                    
+                    <h2>Expert Sand Removal Services</h2>
+                    <p class="lead">After harsh Kansas City winters, sand accumulation can make your parking lot look unprofessional and create safety hazards. Precision Care provides thorough post-winter sand removal and cleanup services throughout the KC metro area.</p>
+                    
+                    <p>Winter sand and debris left on your parking lot damages your asphalt, clogs drainage systems, and creates an unprofessional appearance. Our industrial-strength sweeping equipment and experienced crew ensure complete removal of all winter residue, restoring your property to pristine condition.</p>
 
-                <h3>Why Post-Winter Cleanup Matters</h3>
-                <p>Sand and debris left on your parking lot after winter can:</p>
-                <ul class="service-list">
-                    <li><i class="fas fa-exclamation-triangle"></i> Create an unprofessional appearance</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Damage asphalt surfaces over time</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Clog drainage systems</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Accelerate pavement deterioration</li>
-                    <li><i class="fas fa-exclamation-triangle"></i> Create dust and air quality issues</li>
-                </ul>
+                    <h3>Our Sand Removal Process:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Complete Assessment:</strong> Thorough inspection and planning</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Industrial Equipment:</strong> High-powered sweeping machines</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Edge Cleaning:</strong> Detailed curb line and edge cleanup</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Drain Clearing:</strong> Storm drain cleaning to prevent clogs</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Multiple Passes:</strong> Thorough removal with quality checks</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Proper Disposal:</strong> Environmentally responsible disposal</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Final Inspection:</strong> Quality control and touch-ups</li>
+                    </ul>
 
-                <h3>Service Areas in Kansas City Metro</h3>
-                <p>We provide sand removal services throughout the greater Kansas City area including:</p>
-                <ul class="service-list">
-                    <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Independence</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
-                    <li><i class="fas fa-map-marker-alt"></i> All KC Metro Communities</li>
-                </ul>
-            </div>
+                    <h3>Why Post-Winter Cleanup Matters</h3>
+                    <p>Sand and debris left on your parking lot after winter can:</p>
+                    <ul>
+                        <li><i class="fas fa-exclamation-triangle"></i> Create an unprofessional appearance for customers</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Accelerate asphalt deterioration and surface damage</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Clog storm drains causing flooding issues</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Create dust clouds affecting air quality</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Damage landscaping and surrounding areas</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Track into buildings creating cleaning problems</li>
+                    </ul>
 
-            <div class="service-sidebar">
-                <div class="service-card">
-                    <h3>Quick Contact</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Email Us</a></p>
-                        <p><i class="fas fa-clock"></i> Open 24/7</p>
+                    <h3>Service Areas</h3>
+                    <p>We provide sand removal services throughout the greater Kansas City area including:</p>
+                    <div class="service-areas">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Kansas City, MO & KS</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lee's Summit</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Blue Springs</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Independence</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Overland Park</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Olathe</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lenexa</li>
+                            <li><i class="fas fa-map-marker-alt"></i> All KC Metro</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Ready for Spring Cleanup?</h3>
+                        <p>Contact Precision Care today for professional sand removal services in Kansas City</p>
+                        <a href="tel:8162527989" class="btn btn-primary"><i class="fas fa-phone"></i> Call (816) 252-7989</a>
                     </div>
                 </div>
 
-                <div class="service-card">
-                    <h3>Other Services</h3>
-                    <ul class="service-menu">
-                        <li><a href="striping.html">Parking Lot Striping</a></li>
-                        <li><a href="sweeping.html">Contract Sweeping</a></li>
-                        <li><a href="crack-filling.html">Crack Filling</a></li>
-                        <li><a href="asphalt-repair.html">Asphalt Repair</a></li>
-                        <li><a href="seal-coating.html">Seal Coating</a></li>
-                    </ul>
-                </div>
+                <aside class="service-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Request A Quote</h3>
+                        <p>Get a free estimate for your sand removal project</p>
+                        <a href="tel:8162527989" class="btn btn-secondary"><i class="fas fa-phone"></i> (816) 252-7989</a>
+                        <a href="mailto:Precisioncare9716@sbcglobal.net" class="btn btn-outline"><i class="fas fa-envelope"></i> Email Us</a>
+                    </div>
 
-                <div class="service-card">
-                    <h3>Why Choose Us</h3>
-                    <ul class="why-list">
-                        <li><i class="fas fa-star"></i> 30+ Years Experience</li>
-                        <li><i class="fas fa-star"></i> Licensed & Insured</li>
-                        <li><i class="fas fa-star"></i> 5-Star Google Rating</li>
-                        <li><i class="fas fa-star"></i> Family Owned</li>
-                    </ul>
-                </div>
+                    <div class="sidebar-card">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fas fa-check"></i> 30+ Years Experience</li>
+                            <li><i class="fas fa-check"></i> Licensed & Insured</li>
+                            <li><i class="fas fa-check"></i> Industrial Equipment</li>
+                            <li><i class="fas fa-check"></i> Fast Service</li>
+                            <li><i class="fas fa-check"></i> 5-Star Rated</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h3>Other Services</h3>
+                        <ul class="services-list">
+                            <li><a href="striping.html"><i class="fas fa-arrow-right"></i> Parking Lot Striping</a></li>
+                            <li><a href="sweeping.html"><i class="fas fa-arrow-right"></i> Contract Sweeping</a></li>
+                            <li><a href="crack-filling.html"><i class="fas fa-arrow-right"></i> Crack Filling</a></li>
+                            <li><a href="asphalt-repair.html"><i class="fas fa-arrow-right"></i> Asphalt Repair</a></li>
+                            <li><a href="seal-coating.html"><i class="fas fa-arrow-right"></i> Seal Coating</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="service-cta">
-        <div class="container">
-            <h2>Ready to Clean Up Your Parking Lot?</h2>
-            <p>Get professional sand removal services from Kansas City's most trusted parking lot maintenance company</p>
-            <a href="tel:8162527989" class="cta-button">Call (816) 252-7989 Now</a>
         </div>
     </section>
 
@@ -176,6 +191,7 @@
                     <p><i class="fas fa-phone"></i> <a href="tel:8162527989">(816) 252-7989</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:Precisioncare9716@sbcglobal.net">Precisioncare9716@sbcglobal.net</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> 8894 S Buckner Tarsney Rd<br>Oak Grove, MO 64075</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7</p>
                 </div>
             </div>
             <div class="footer-bottom">
