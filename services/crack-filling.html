@@ -20,17 +20,29 @@
             <a href="../index.html" class="logo">
                 <img src="../images/logo-full.png" alt="Precision Care Logo">
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#services">Services</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="striping.html">Parking Lot Striping</a></li>
+                        <li><a href="sweeping.html">Contract Sweeping</a></li>
+                        <li><a href="sand-removal.html">Sand Removal</a></li>
+                        <li><a href="crack-filling.html">Crack Filling</a></li>
+                        <li><a href="asphalt-repair.html">Asphalt Repair</a></li>
+                        <li><a href="seal-coating.html">Seal Coating</a></li>
+                    </ul>
+                </li>
                 <li><a href="../index.html#gallery">Gallery</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
             </ul>
             <a href="tel:8162527989" class="cta-button">Call (816) 252-7989</a>
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
