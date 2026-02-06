@@ -677,6 +677,14 @@ section {
 .service-image {
     height: 250px;
     overflow: hidden;
+    position: relative;
+}
+
+.service-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .service-image img {
@@ -1874,14 +1882,14 @@ section {
     padding: 12px;
     background: var(--white);
     border-radius: 5px;
-    color: var(--text-dark);
+    color: var(--text-dark) !important;
     transition: var(--transition);
     text-decoration: none;
 }
 
 .services-list a:hover {
     background: var(--secondary-color);
-    color: var(--white);
+    color: var(--white) !important;
     transform: translateX(5px);
 }
 
