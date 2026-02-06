@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close mobile menu when clicking on a link
-    const navLinkItems = document.querySelectorAll('.nav-link');
+    // Close mobile menu when clicking on a link (but NOT the dropdown toggle)
+    const navLinkItems = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
     navLinkItems.forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 768) {
@@ -97,6 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // SMOOTH SCROLLING FOR ANCHOR LINKS
     // ===================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        // Skip the dropdown toggle - it should NOT trigger smooth scrolling
+        if (anchor.classList.contains('dropdown-toggle')) {
+            return;
+        }
+        
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             if (href !== '#' && href.length > 1) {
@@ -128,10 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
             
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelectorAll('.nav-link').forEach(link => {
+                document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
                     link.classList.remove('active');
                 });
-                if (navLink) {
+                if (navLink && !navLink.classList.contains('dropdown-toggle')) {
                     navLink.classList.add('active');
                 }
             }
