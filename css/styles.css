@@ -685,7 +685,7 @@ section {
 .why-features {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
 }
 
 .why-feature {
@@ -1095,6 +1095,20 @@ section {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     margin: 5px 0;
+}
+
+.footer-credit {
+    margin-top: 10px !important;
+}
+
+.footer-credit a {
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.footer-credit a:hover {
+    color: var(--accent-color);
 }
 
 /* ===================================
