@@ -1535,6 +1535,130 @@ section {
     margin-bottom: 20px;
 }
 
+.service-main .lead {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Service page list styling */
+.service-main ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 30px;
+}
+
+.service-main ul li {
+    padding: 12px 0;
+    color: var(--text-dark);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.service-main ul li i {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.service-main ul li strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.service-main ol {
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+    margin: 20px 0 30px;
+}
+
+.service-main ol li {
+    counter-increment: item;
+    padding: 15px 0;
+    color: var(--text-dark);
+    line-height: 1.7;
+    position: relative;
+    padding-left: 40px;
+}
+
+.service-main ol li:before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background: var(--secondary-color);
+    color: var(--white);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.service-main ol li strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Service areas grid */
+.service-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+.service-areas ul {
+    margin: 0;
+}
+
+.service-areas ul li i {
+    color: var(--secondary-color);
+}
+
+/* CTA Box */
+.cta-box {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0;
+    box-shadow: var(--box-shadow);
+}
+
+.cta-box h3 {
+    color: var(--white);
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+
+.cta-box p {
+    color: var(--white);
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+
+.cta-box .btn {
+    background: var(--white);
+    color: var(--secondary-color);
+}
+
+.cta-box .btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
 .service-list {
     list-style: none;
     padding: 0;
@@ -1666,6 +1790,108 @@ section {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+
+.sidebar-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sidebar-card .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar-card.highlight {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    color: var(--white);
+}
+
+.sidebar-card.highlight h3,
+.sidebar-card.highlight p {
+    color: var(--white);
+}
+
+.sidebar-card.highlight a {
+    color: var(--white);
+}
+
+.sidebar-card.emergency {
+    background: #f44336;
+    color: var(--white);
+}
+
+.sidebar-card.emergency h3,
+.sidebar-card.emergency p {
+    color: var(--white);
+}
+
+.sidebar-card.seasonal {
+    background: #4caf50;
+    color: var(--white);
+}
+
+.sidebar-card.seasonal h3,
+.sidebar-card.seasonal p {
+    color: var(--white);
+}
+
+/* Sidebar Lists */
+.facts-list,
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facts-list li {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-dark);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
+}
+
+.facts-list li i {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+}
+
+.services-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--white);
+    border-radius: 5px;
+    color: var(--text-dark);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.services-list a:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: translateX(5px);
+}
+
+.services-list a i {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+.services-list a:hover i {
+    color: var(--white);
 }
 
 .sidebar-contact {
